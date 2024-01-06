@@ -1,20 +1,13 @@
-Date: Sat, 06 Jan 2024 18:36:06 +0000
-Origin: neo-project
-Label: neo-project
-Codename: jammy
-Architectures: amd64
-Components: main
-Description: The Neo Project
-SignWith: 9B57AD76B4C1B351453901AB2731A140CA1CC3A7
+Date: Sat, 06 Jan 2024 18:39:51 +0000
 MD5Sum:
- e54b3cb48a3b778fcf022b4e6847d2cc               38 Release
+ b77c1d540f092dc3354fd1450607ec1f               38 Release
  ff1e51fd91483bcf136aa0c078aad4fe              307 jammy/main/Packages.gz
 SHA1:
- 42caebaa493111a0b170abee88dbd5f3fa167510               38 Release
+ 1c80268ca8307200128ea08633140d2b503a425d               38 Release
  cf5250e028eb86e80958824f98eb8d98791ee56a              307 jammy/main/Packages.gz
 SHA256:
- 336c4929584ce8657a07c48865346e29216cd68a72a4614e9858d5c751d9bb9e               38 Release
+ 40b1e11dc7fd93fbe90451f19f7b670a8b0724bf6e62c9de64ee419ae9d1f951               38 Release
  9d7fe9136274ca07e7c64c4324feeb709f673c4401bc20a1953a9db66fd79c60              307 jammy/main/Packages.gz
 SHA512:
- acc02132bd7bcbbea946d39d476748e6ed7af304077112d3116afe4038179a2b76a59e84855a7877248533dca962f8a039442acf45dfccac45206ca8c1450d5e               38 Release
+ 188ce5e02ded89b06e4be34247610b81ab1056c89ef11b03ad31381dfaf5e77e4ef900e3fdc8a6f3c9028419b979f4be02e35c99fdbb5c90ff28d4a3b27405d8               38 Release
  1cc56c514e6e7745cc3bebcdb38450583a7f11452f66baaefbbd31871ac52af1f1cea4f6a85a8c6aefba664f54d09697af3aea0bbfa872aa231e5391d6957b0c              307 jammy/main/Packages.gz
