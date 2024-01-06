@@ -1,0 +1,13 @@
+Date: Sat, 06 Jan 2024 18:25:02 +0000
+MD5Sum:
+ ac6cd13a8a0356377daf39f9dd9c1b88               38 Release
+ 74016e46ef2b04bac964f8095ee7747c              313 dists/jammy/main/Packages.gz
+SHA1:
+ a9b425b240c446e081992264930951486341245b               38 Release
+ 2d7208a5f66e679be87de6946d7ab976705ee20b              313 dists/jammy/main/Packages.gz
+SHA256:
+ 935b6774c89773ba3c65a6af2bb371d9e696d18372af2dbf1ba7fc9b5476917a               38 Release
+ 1e6ccb5c1a0fb6459a856e0af1a6948569788885f4ffd357a85f476cceee84ce              313 dists/jammy/main/Packages.gz
+SHA512:
+ 5300154b98c79c15bd878b982ee9e9baf45a6fc90d6d61bc8643f9a749f4c36cb44ed5237c7d7330480f83a146c6e5bf93b64576d5ef6e7ba5a4075bb95e72e1               38 Release
+ 9bd51dd1c41f53b4715ee113630136cec68e97db7fcdd745af8b8f536fa983956ffb9a65a905ba54cd823d998ae3a53eebb00e5cce4303ebd5163a73a4377fac              313 dists/jammy/main/Packages.gz
