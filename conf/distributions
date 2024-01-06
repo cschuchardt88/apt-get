@@ -1,0 +1,7 @@
+Origin: neo-project
+Label: neo-project
+Codename: jammy
+Architectures: amd64
+Components: main
+Description: The Neo Project
+SignWith: 9B57AD76B4C1B351453901AB2731A140CA1CC3A7
