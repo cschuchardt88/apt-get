@@ -1,0 +1,18 @@
+Origin: neo-project
+Label: neo-project
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: amd64 arm64
+Components: main
+Description: Neo Blockchain Tools
+Date: Sun, 07 Jan 2024 03:31:44 +0000
+MD5Sum:
+ 26b676534f438821c4333a6e338bc136 423 main/binary-amd64/Packages
+ 09a72c07d8f3f9e1214c0d480d1707c5 325 main/binary-amd64/Packages.gz
+SHA1:
+ c751c0a272642af989a876dd568e8fa22ca8efd3 423 main/binary-amd64/Packages
+ ecd3479c85ad31483c69db0eade33a542db13d3f 325 main/binary-amd64/Packages.gz
+SHA256:
+ e9bfcd3942401a78326b61b1604ebbed7fe8f3d8454ced0ab497848147565712 423 main/binary-amd64/Packages
+ 5ff542562ce3d8d46ee2afa93f635d931cbce4f97b593cc69b944b69a9421257 325 main/binary-amd64/Packages.gz
