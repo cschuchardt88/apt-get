@@ -15,4 +15,4 @@ jobs:
 
     steps:
     - name: Import GPG key
-      run: echo -n "${{ secrets.GPG_KEY_SIGN }}" | base64 --decode | gpg --import --passphase ${{ secrets.GPG_KEY_PASSPHASE }} --batch
+      run: echo -n "${{ secrets.GPG_KEY_SIGN }}" | base64 --decode | gpg --import --passphrase ${{ secrets.GPG_KEY_PASSPHRASE }} --batch
