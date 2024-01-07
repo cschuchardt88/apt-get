@@ -14,13 +14,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: List Contents
-      run: ls -la ~/.gnupg/
-
-    - name: Prepare GPG
-      run: |
-       echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-       gpgconf --reload gpg-agent
-
     - name: Import GPG key
-      run: echo -n "${{ secrets.GPG_KEY_SIGN }}" | base64 --decode | gpg --import
+      run: echo -n "${{ secrets.GPG_KEY_SIGN }}" | base64 --decode | gpg --import --passphase ${{ secrets.GPG_KEY_PASSPHASE }} --batch
