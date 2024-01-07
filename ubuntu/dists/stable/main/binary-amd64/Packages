@@ -5,10 +5,10 @@ Essential: no
 Maintainer: neo-project
 Depends: libleveldb-dev, libsnappy-dev, libsqlite3-dev
 Filename: pool/main/neo-cli_3.7.2-1_amd64.deb
-Size: 40155438
-MD5sum: 759ef044e2f30d3d24e2d5ca4f8b891d
-SHA1: a9629f2d03f7cb9db31a47b1a5da00bb2d3554ff
-SHA256: 1cc3c1e4edc1c1581e9133648ce06198377514df074d09b931f002e3231ff129
+Size: 40154722
+MD5sum: 794cde7f81e46f8a9c47d02238c8796d
+SHA1: aef34125ec90492f05276625df8d35a0ff55cfce
+SHA256: bf0a0f6f4b16e4b16b9495e9ffc13754f8744d71c44d753206719714718a4157
 Priority: optional
 Description: Neo n3 blockchain node
 
