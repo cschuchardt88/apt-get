@@ -75,6 +75,6 @@ jobs:
         mkdir -vp ${{ env.DPKGS_DIST_PATH }}
 
     - name: Execute Build Script (neo-cli)
-      working-directory: ./${{ github.ref }}/scripts
+      working-directory: ./${{ github.ref_name }}/scripts
       run: ./build-neo-cli.sh
 
