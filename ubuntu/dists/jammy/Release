@@ -1,23 +1,19 @@
-Date: Sun, 07 Jan 2024 01:06:34 +0000
 Origin: neo-project
 Label: neo-project
 Codename: jammy
 Architectures: amd64
 Components: main
 Description: The Neo Project
+Date: Sun, 07 Jan 2024 02:01:37 +0000
 MD5Sum:
- ce021ad3b334108cc5caecf575909473               38 Release
- 1b0bad9cb581847353b6ff27c45cf423              301 main/binary-amd64/Packages.gz
- 913c2acdcdef3b7a36efcc54724fec93               94 main/binary-amd64/Release
+ 7f820dd167a2193dc8fcd2d6135acadb               38 Release
+ 98f5b3ee1c15a41ca359c7677850a774              336 main/binary-amd64/Packages.gz
 SHA1:
- bbf8c4d84f07f8f2e9f5f9cc2f6afa04fcd13250               38 Release
- ad4106cc2d62d714bb1571a179669a0bd388c816              301 main/binary-amd64/Packages.gz
- 77810fa95e0d69240535f4da6009c628e44875f6               94 main/binary-amd64/Release
+ 08a32b690c4581c29ec8bdf8e2b1b76eb2d0992e               38 Release
+ 2b5519c2c598954bb3049109784563a02ef9fd3c              336 main/binary-amd64/Packages.gz
 SHA256:
- 23a91d3adaf871a95f24ca723773ad439416546d2d269037419bc30700f840a2               38 Release
- 3f5400ef20785db145316d1da83f5a3b44ba5e586f7eb4223efaae3377f10126              301 main/binary-amd64/Packages.gz
- 5f88b0fda7dc12f55314f219ede514045f3f7146b9238ef7e167771886e3c721               94 main/binary-amd64/Release
+ e9ac714061fc699b1d879f582a95954d49b92ed9d32f479eb0c0fe4f27e87605               38 Release
+ eecc16752b2b02f0184c0f57e6de321e2b052d1a62fe1c38962d3c2c58560c70              336 main/binary-amd64/Packages.gz
 SHA512:
- 9639e561f34e47b91bb16a67c14111cde433b7bdf793f5305c2a01245aa9e8bccc7046f9c0bb0d254b0d37d1618e15d9358cbabcc13a049c7a80ffc51b037e3b               38 Release
- b5362df93a014ab65529f6f8328bf79ff5c9d4a233ab824effb76b031f3ebdf21067f8816a7acce3bd91c3167be0a5c02839e85149d73b67403d228ccef19656              301 main/binary-amd64/Packages.gz
- 067380538713674dc5c0b755eb994cd569eaafc6689aa06ff1fb8b19b1b0fca3f80caed5effe368cbe920298193af0cc0bba2c2256ed1d58ce49b77361f3d1aa               94 main/binary-amd64/Release
+ 7a520a262c714ad2e52fdae83710c4ebcd38dcca0f7b4dd17329daee5e763d31f75b2b4843726db2f06485e3eeaf7c030a75dba928684a86a7bdffbd9915342a               38 Release
+ 262e5ebe47395204abc9c3275ce78d6bc9df45970c34f7ddb6a177df0ede2f2e8a426f2b9aad1d7bbe27aa331c158411ba354ec4ab6f458bef93c90e1a6cd275              336 main/binary-amd64/Packages.gz
