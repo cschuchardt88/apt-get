@@ -1,18 +1,80 @@
-name: Deploy (apt-get)
+name: Build & Deploy Repository (apt-get)
 
 on:
   workflow_dispatch:
     inputs:
       tag-name:
         type: string
-        description: 'Tag Name:'
+        description: 'Tag Name (apt-get):'
+        required: true
+      neo-version:
+        type: string
+        description: 'Neo Version (Example: 3.7.0):'
         required: true
 
+env:
+  DOTNET_VERSION: 7.0.x
+  NEO_PATH: /tmp/npkgs
+  DPKGS_PATH: /tmp/dpkgs
+  NEO_VERSION: ${{ github.event.inputs.neo-version }}
+
 jobs:
-  checkout:
-    name: Test GPG Key
+  apt-get:
+    name: Build & Deploy
     runs-on: ubuntu-latest
 
     steps:
-    - name: Import GPG key
-      run: echo -n "${{ secrets.GPG_KEY_SIGN }}" | base64 --decode | gpg --import --passphrase ${{ secrets.GPG_KEY_PASSPHRASE }} --batch
+    - name: Import GPG key Secret Key (neo-project)
+      run: |
+        echo -n "${{ secrets.GPG_KEY_SIGN }}" | \
+        base64 --decode | \
+        gpg --import --passphrase ${{ secrets.GPG_KEY_PASSPHRASE }} --batch
+
+    - name: Checkout Repository Code (${{ github.ref }})
+      uses: actions/checkout@v4
+      with:
+        path: ./${{ github.ref }}
+        fetch-depth: 0
+
+    - name: Checkout Repository (apt-get)
+      uses: actions/checkout@v4
+      with:
+        path: ./apt-repo
+        ref: var/www
+        fetch-depth: 0
+
+    - name: Checkout Repository (neo)
+      uses: actions/checkout@v4
+      with:
+        repository: neo-project/neo
+        path: ./neo
+        fetch-depth: 0
+
+    - name: Checkout Repository (neo-modules)
+      uses: actions/checkout@v4
+      with:
+        repository: neo-project/neo-modules
+        path: ./neo-modules
+        fetch-depth: 0
+
+    - name: Checkout Repository (neo-devpack-dotnet)
+      uses: actions/checkout@v4
+      with:
+        repository: neo-project/neo-devpack-dotnet
+        path: ./neo-devpack-dotnet
+        fetch-depth: 0
+
+    - name: Setup .NET ${{ env.DOTNET_VERSION }}
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Create Build Directory (deb-pkgs)
+      run: 
+        mkdir -vp ${{ env.NEO_PATH }}
+        mkdir -vp ${{ env.DPKGS_DIST_PATH }}
+
+    - name: Execute Build Script (neo-cli)
+      working-directory: ./${{ github.ref }}/scripts
+      run: ./build-neo-cli.sh
+
