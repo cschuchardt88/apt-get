@@ -19,6 +19,7 @@ dotnet publish ${GITHUB_WORKSPACE}/neo/src/Neo.CLI \
     -p:DebugType=embedded \
     -p:ServerGarbageCollection=true;
 rm -v ${NEO_PATH}/neo-cli_amd64/*.json;
+rm -v ${NEO_PATH}/neo-cli_amd64/*.xml;
 mkdir -vp ${DPKGS_PATH}/neo-cli_${NEO_VERSION}-1_amd64;
 mkdir -vp ${DPKGS_PATH}/neo-cli_${NEO_VERSION}-1_amd64/DEBIAN;
 mkdir -vp ${DPKGS_PATH}/neo-cli_${NEO_VERSION}-1_amd64/srv/neo-cli/db;
@@ -52,6 +53,7 @@ dotnet publish ${GITHUB_WORKSPACE}/neo/src/Neo.CLI \
     -p:DebugType=embedded \
     -p:ServerGarbageCollection=true;
 rm -v ${NEO_PATH}/neo-cli_arm64/*.json;
+rm -v ${NEO_PATH}/neo-cli_arm64/*.xml;
 mkdir -vp ${DPKGS_PATH}/neo-cli_${NEO_VERSION}-1_arm64;
 mkdir -vp ${DPKGS_PATH}/neo-cli_${NEO_VERSION}-1_arm64/DEBIAN;
 mkdir -vp ${DPKGS_PATH}/neo-cli_${NEO_VERSION}-1_arm64/srv/neo-cli/db;

@@ -30,10 +30,10 @@ jobs:
         base64 --decode | \
         gpg --import --passphrase ${{ secrets.GPG_KEY_PASSPHRASE }} --batch
 
-    - name: Checkout Repository Code (${{ github.ref }})
+    - name: Checkout Repository Code (${{ github.ref_name }})
       uses: actions/checkout@v4
       with:
-        path: ./${{ github.ref }}
+        path: ./${{ github.ref_name }}
         fetch-depth: 0
 
     - name: Checkout Repository (apt-get)
