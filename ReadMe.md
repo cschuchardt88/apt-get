@@ -2,10 +2,8 @@
 This repo is for testing.
 
 ## Add Repo to `app-get`
-**Edit:** `/etc/apt/sources.list` file.
 
-### Add the Content Below
-```
-# NEO REPO
-deb https://archive.neo.events/ubuntu/ jammy main
+**Add the Content Below**
+```bash
+echo "deb [arch=amd64] https://archive.neo.evnts/ubuntu stable main" | sudo tee /etc/apt/sources.list.d/neoevents.list
 ```
